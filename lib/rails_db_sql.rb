@@ -7,7 +7,12 @@ module RailsDbSql
   def self.reload(pattern="db/sql/**/*.sql")
     Dir.glob(pattern).sort.each do |path|
       File.open path, "r" do |file|
-        execute_sql file.read
+        puts "RailsDbSql executing #{path}"
+        begin
+         execute_sql file.read
+        rescue => e
+          puts e
+        end
       end
     end
   end
