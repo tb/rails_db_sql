@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    rails_db_sql (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rails_db_sql!
