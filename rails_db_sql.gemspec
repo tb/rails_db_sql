@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "rails_db_sql"
   gem.require_paths = ["lib"]
   gem.version       = RailsDbSql::VERSION
+
+  gem.add_development_dependency "colored"
 end
