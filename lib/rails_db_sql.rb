@@ -18,10 +18,10 @@ module RailsDbSql
     end
     unless errors.empty?
       errors.each_with_index do |(path,details),index|
-        puts "\n#{index+1}) Error in #{path}".red
+        puts "\n#{index+1}) Error in #{path}"
         puts "\n#{details}\n"
       end
-      puts "RailsDbSql: #{errors.size} errors".red
+      puts "RailsDbSql: #{errors.size} errors"
     end
   end
 
